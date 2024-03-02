@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&S - Login</title>
+    <link rel="shortcut icon" href="../../Public/Assets/fands.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="../../Public/Scripts/Public-script.js" defer></script>
+    <script src="./Script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <img />
+        </section>
+        <section class="nav-tabs">
+            <ul id="tabs"></ul>
+        </section>
+    </header>
+    <main>
+        <form action="/" method="get">
+            <div class="wrapper">
+                <h1>Login</h1>
+                <input type="text" id="user-name" placeholder="Username" required>
+                <input type="password" id="pass-word" placeholder="Password" required>
+                <div class="completed">
+                    <div class="checker">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <a href="../signUp/index.html">Forgot Your Password ?</a>
+                </div>
+                <a href="#" class="rules">Terms & Privacy</a>
+                <button onclick="afterClick()" type="submit" id="submit-btn">Login</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <h1>Footer Section</h1>
+        </div>
+    </footer>
+</body>
+</html>

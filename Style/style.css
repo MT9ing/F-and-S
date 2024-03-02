@@ -1,0 +1,71 @@
+@import url(../Public/Styles/Public-style.css);
+
+main {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1rem);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: var(--_-gap);
+    margin-block: var(--_-gap);
+    padding: var(--_-gap);
+    overflow: hidden;
+
+
+    .land-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+
+        .land-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            gap: 2rem;
+            margin: 4rem;
+            margin-right: 2rem;
+            padding: 2rem;
+            
+            img{
+                width: 20rem;
+            }
+
+            /* &::before{
+                content: '';
+                width: 18.3rem;
+                height: 18.3rem;
+                position: absolute;
+                z-index: -1;
+                border-radius: 50%;
+                background-color: yellowgreen;
+            } */
+            /* span{color: currentColor} */
+        }
+        .line-break-between{
+            width: 0.3rem;
+            height: 18rem;
+            background-color: currentColor;
+
+        }
+        .land-desc{
+            width: 50%;
+            margin: 2rem;
+            padding: 2rem;
+            padding-right: 5rem;
+
+            h1{
+                color: currentColor;
+                /* font-size: 3rem; */
+            }
+            p{
+                /* font-size: 1.5srem; */
+                color: currentColor;
+            }
+        }
+    }
+}

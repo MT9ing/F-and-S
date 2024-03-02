@@ -1,0 +1,102 @@
+:root{
+    --_color:#102;
+    --s-color: #fff;
+    --l-color: rgb(236, 28, 36);
+    --_font: Helvetica;
+    --_font-s: 1.4rem;
+    --_gap: 0.8rem;
+    --_bg: linear-gradient( 
+                            130deg,
+                            var(--_color),
+                            #212
+                            );
+    --_zero: 0;
+
+}
+
+::selection{
+    border: none;
+    background: none;
+}
+
+body{
+    margin: var(--_zero);
+    padding: var(--_zero);
+    box-sizing: border-box;
+    font-family: var(--_font);
+    font-size: var(--_font-s);
+    background: var(--_bg) no-repeat var(--_color);
+    color: var(--s-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-height:100vh; */
+
+
+    a{text-decoration: none}
+    li{list-style-type: none}
+    
+    
+    header{
+        margin: var(--_gap);
+        width: 90vw;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--_gap) calc(var(--_gap) * 2);
+        
+        .logo-container{
+            img{width: 4rem}
+        }
+        .nav-tabs{
+            ul{
+                display: flex;
+                gap: var(--_gap);
+    
+                li a{
+                    color: var(--s-color);
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    transition: color 0.4s ease-out;
+                    &:hover{
+                        color: var(--l-color);
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+    background-color:#000;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    bottom: 0;
+    margin-top: calc(var(--_-gap) + 10vh);
+
+        .wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        }
+    }
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1rem);
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--_-gap);
+    margin-block: var(--_-gap);
+    padding: var(--_-gap);
+    overflow: hidden;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&S - Sign Up</title>
+    <link rel="shortcut icon" href="../../Public/Assets/fands.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="./Script/script.js" defer></script>
+    <script src="../../Public/Scripts/Public-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <img />
+        </section>
+        <section class="nav-tabs">
+            <ul id="tabs"></ul>
+        </section>
+    </header>
+    <main>
+        <form action="../Login/index.html" method="get">
+            <div class="wrapper">
+                
+                <h1>Sign Up</h1>
+                <input type="text" placeholder="Full Name" spellcheck="true" id="f-name" required>
+                <input type="text" placeholder="Username" id="user-name" required>
+                <input type="email" placeholder="E-mail" id="e-g-mail" required>
+                <input type="password" placeholder="Password" id="pass1" required>
+                <input type="password" placeholder="ReType Password" id="pass2" required>
+                <div class="role">
+                    <input type="radio" name="Role" value="Factory" id="factory" required>
+                    <label for="factory">Sign up as a Factory</label>
+                    <input type="radio" name="Role" value="Supplier" id="supplier" required>
+                    <label for="supplier">Sign up as a Supplier</label>
+                </div>
+                <span class="rules-cover">By Creating An Accout You Are Agreeing on our <a href="#" class="rules">Terms & Privacy</a></span>
+                <button onclick="afterClick()" type="submit" id="submit-btn">Create An Account</button>
+            </div>
+        </form>
+    </main> 
+    <footer>
+        <div class="wrapper">
+            <h1>Footer Section</h1>
+        </div>
+    </footer>
+</body>
+</html>
